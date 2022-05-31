@@ -6,9 +6,11 @@ demo@demo.com
 password:
 demo1234
 
+email untuk reset password:
+reset@demo.com
+
 link Laporan Projek Final:
 https://drive.google.com/drive/folders/1qgWnbPcP81RmvZwd6Ienu2-iZkKqs_po?usp=sharing
-
 
 oleh:
 I Wayan Darmika Esa Krissayoga_1705551076
