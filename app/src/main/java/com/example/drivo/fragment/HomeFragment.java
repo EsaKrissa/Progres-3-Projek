@@ -1,6 +1,7 @@
 package com.example.drivo.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,7 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.example.drivo.Login;
+import com.example.drivo.LupaPassword;
+import com.example.drivo.MainActivity;
 import com.example.drivo.R;
 import com.example.drivo.adapter.GrupAdapter;
 import com.example.drivo.model.Brand;
@@ -40,6 +45,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
+
     }
 
     @Override

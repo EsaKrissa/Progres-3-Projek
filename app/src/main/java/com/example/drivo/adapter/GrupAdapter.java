@@ -1,15 +1,20 @@
 package com.example.drivo.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.drivo.Login;
+import com.example.drivo.LupaPassword;
+import com.example.drivo.MainActivity;
 import com.example.drivo.model.Brand;
 import com.example.drivo.model.Mobil;
 import com.example.drivo.model.Grup;
@@ -36,6 +41,7 @@ public class GrupAdapter extends RecyclerView.Adapter<GrupAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_grup, parent, false);
         return new ViewHolder(view);
+
     }
 
     @Override
@@ -44,7 +50,6 @@ public class GrupAdapter extends RecyclerView.Adapter<GrupAdapter.ViewHolder> {
         holder.judulGrup.setText(daftarGrup.get(position).getJudulGrup());
         holder.grupLihatSemua.setText(daftarGrup.get(position).getJudulButtonGrup());
         holder.setList(holder.recyclerView, position);
-
     }
 
     @Override
@@ -82,11 +87,8 @@ public class GrupAdapter extends RecyclerView.Adapter<GrupAdapter.ViewHolder> {
                     setAvailableNearList(recyclerView);
 
                     break;
-
             }
-
         }
-
     }
 
     private void setTopBrandList(RecyclerView recyclerView) {

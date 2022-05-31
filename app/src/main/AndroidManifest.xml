@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Drivo">
         <activity
+            android:name=".Mobil"
+            android:exported="false"
+            android:parentActivityName=".Brand"/>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
             android:name=".LupaPassword"
             android:exported="false" />
         <activity
@@ -25,7 +32,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".Brand"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

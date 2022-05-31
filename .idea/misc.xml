@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/bg_daftar_button.xml" value="0.103" />
         <entry key="app/src/main/res/drawable/bg_nav_white.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/bg_search.xml" value="0.41157189941406247" />
+        <entry key="app/src/main/res/drawable/brand_background.xml" value="0.16376495361328125" />
         <entry key="app/src/main/res/drawable/circle_button_bg.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/custom_button.xml" value="0.1785" />
         <entry key="app/src/main/res/drawable/daftar_button_bg.xml" value="0.174" />
@@ -16,21 +17,24 @@
         <entry key="app/src/main/res/drawable/login_item_3.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/mulai_button.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/nav_indicator.xml" value="0.1685" />
-        <entry key="app/src/main/res/layout/activity_daftar.xml" value="0.15496978759765628" />
+        <entry key="app/src/main/res/layout/activity_brand.xml" value="0.1544584878791776" />
+        <entry key="app/src/main/res/layout/activity_daftar.xml" value="0.19234924316406254" />
         <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.2209503173828125" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.14177703857421875" />
-        <entry key="app/src/main/res/layout/activity_lupa_password.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.284765625" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22093353271484373" />
+        <entry key="app/src/main/res/layout/activity_lupa_password.xml" value="0.25831298828125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16378173828125003" />
+        <entry key="app/src/main/res/layout/activity_mobil.xml" value="0.19015045166015626" />
         <entry key="app/src/main/res/layout/activity_selamat_datang.xml" value="0.1596858591273211" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.21875" />
-        <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.16304347826086957" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25717660075288196" />
-        <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.16304347826086957" />
+        <entry key="app/src/main/res/layout/brand_row.xml" value="0.25406580457099354" />
+        <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.24970245361328153" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.284698486328125" />
+        <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.23690026970448635" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.16304347826086957" />
-        <entry key="app/src/main/res/layout/item_grup.xml" value="0.25539272142493213" />
+        <entry key="app/src/main/res/layout/item_grup.xml" value="0.30158412767493215" />
         <entry key="app/src/main/res/layout/login_item.xml" value="0.19456329345703124" />
-        <entry key="app/src/main/res/layout/tersedia_disekitar.xml" value="0.29057338548743206" />
-        <entry key="app/src/main/res/layout/top_brand.xml" value="0.46281738281250007" />
+        <entry key="app/src/main/res/layout/tersedia_disekitar.xml" value="0.46219686162624823" />
+        <entry key="app/src/main/res/layout/top_brand.xml" value="0.4210403442382814" />
         <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.21875" />
       </map>
     </option>

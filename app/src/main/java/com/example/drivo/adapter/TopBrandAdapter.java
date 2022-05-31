@@ -1,16 +1,19 @@
 package com.example.drivo.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.drivo.R;
 import com.example.drivo.model.Brand;
+import com.example.drivo.model.Mobil;
 
 import java.util.List;
 
@@ -37,6 +40,8 @@ public class TopBrandAdapter extends RecyclerView.Adapter<TopBrandAdapter.ViewHo
     public void onBindViewHolder(@NonNull TopBrandAdapter.ViewHolder holder, int position) {
 
         holder.brandLogo.setImageResource(daftarTopBrand.get(position).getBrandLogo());
+
+
 
     }
 

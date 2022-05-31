@@ -4,20 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Mobil"
-    android:background="@color/white_soft">
+    tools:context=".Mobil">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_arrow_mobil"
+        android:layout_width="32dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_back_arrow"
+        android:contentDescription="@string/top_drivo_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/main_nama_brand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/gilroy_bold"
-        android:text="Favorit anda"
+        android:text="@string/tesla"
         android:textColor="@color/black"
-        android:textSize="28sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow_mobil"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_brand_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/top_i_icon"
+        android:src="@drawable/brand_logo_1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
@@ -32,13 +58,10 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/mobil_row_bg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_nama_brand">
+        app:layout_constraintTop_toBottomOf="@+id/main_nama_brand"
+        tools:layout_editor_absoluteX="10dp">
 
 
         <TextView
@@ -103,21 +126,12 @@
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/mobil_tesla_s" />
 
-        <ImageView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="22dp"
-            android:src="@drawable/ic_like_sm"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tesla_s_harga" />
-
         <TextView
             android:id="@+id/tesla_s_harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="28dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/gilroy_medium"
             android:text="IDR 1.6jt/hari"
             android:textColor="@color/black"
@@ -136,97 +150,85 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/mobil_row_bg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:layout_editor_absoluteX="0dp">
 
 
         <TextView
-            android:id="@+id/nama_mitsubishi_xpander"
+            android:id="@+id/nama_model_tesla_x"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="28dp"
             android:fontFamily="@font/gilroy_semibold"
             android:lineHeight="36dp"
-            android:text="Mitsubishi Xpander"
+            android:text="Tesla Model X"
             android:textColor="@color/black"
             android:textSize="26sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <RatingBar
-            android:id="@+id/ratingBar3"
+            android:id="@+id/ratingBar2"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nama_mitsubishi_xpander"
+            android:layout_below="@+id/nama_model_tesla_x"
             android:layout_marginTop="32dp"
             android:isIndicator="true"
             android:numStars="1"
             android:rating="1"
             android:theme="@style/RatingBar"
-            app:layout_constraintStart_toStartOf="@+id/nama_mitsubishi_xpander"
-            app:layout_constraintTop_toBottomOf="@+id/nama_mitsubishi_xpander" />
+            app:layout_constraintStart_toStartOf="@+id/nama_model_tesla_x"
+            app:layout_constraintTop_toBottomOf="@+id/nama_model_tesla_x" />
 
         <TextView
-            android:id="@+id/mitsubishi_review1"
+            android:id="@+id/tesla_review2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:fontFamily="@font/gilroy_medium"
             android:text="4.4"
             android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@+id/ratingBar3"
-            app:layout_constraintTop_toTopOf="@+id/ratingBar3" />
+            app:layout_constraintStart_toEndOf="@+id/ratingBar2"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar2" />
 
         <TextView
-            android:id="@+id/mitsubishi_review_review1"
+            android:id="@+id/tesla_review_review2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:fontFamily="@font/gilroy_medium"
             android:text="@string/review"
             android:textColor="@color/black_soft"
-            app:layout_constraintStart_toEndOf="@+id/mitsubishi_review1"
-            app:layout_constraintTop_toTopOf="@+id/mitsubishi_review1" />
+            app:layout_constraintStart_toEndOf="@+id/tesla_review2"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar2" />
 
         <ImageView
-            android:id="@+id/mobil_mitsubishi_xpander"
+            android:id="@+id/mobil_tesla_x"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/mobil_mitsubishi_xpander" />
-
-        <ImageView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="22dp"
-            android:src="@drawable/ic_like_sm"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/mitsubishi_xpander_harga" />
+            app:srcCompat="@drawable/mobil_tesla_x" />
 
         <TextView
-            android:id="@+id/mitsubishi_xpander_harga"
+            android:id="@+id/tesla_x_harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="28dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/gilroy_medium"
-            android:text="IDR 800rb/hari"
+            android:text="IDR 1.6jt/hari"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -243,70 +245,66 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="166dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/mobil_row_bg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:layout_editor_absoluteX="0dp">
 
 
         <TextView
-            android:id="@+id/nama_toyota_avanza"
+            android:id="@+id/nama_model_tesla_y"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="28dp"
             android:fontFamily="@font/gilroy_semibold"
             android:lineHeight="36dp"
-            android:text="Toyota Avanza"
+            android:text="Tesla Model Y"
             android:textColor="@color/black"
             android:textSize="26sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <RatingBar
-            android:id="@+id/ratingBar2"
+            android:id="@+id/ratingBar3"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nama_toyota_avanza"
+            android:layout_below="@+id/nama_model_tesla_y"
             android:layout_marginTop="32dp"
             android:isIndicator="true"
             android:numStars="1"
             android:rating="1"
             android:theme="@style/RatingBar"
-            app:layout_constraintStart_toStartOf="@+id/nama_toyota_avanza"
-            app:layout_constraintTop_toBottomOf="@+id/nama_toyota_avanza" />
+            app:layout_constraintStart_toStartOf="@+id/nama_model_tesla_y"
+            app:layout_constraintTop_toBottomOf="@+id/nama_model_tesla_y" />
 
         <TextView
-            android:id="@+id/honda_review1"
+            android:id="@+id/tesla_review3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:fontFamily="@font/gilroy_medium"
             android:text="4.2"
             android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@+id/ratingBar2"
-            app:layout_constraintTop_toTopOf="@+id/ratingBar2" />
+            app:layout_constraintStart_toEndOf="@+id/ratingBar3"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar3" />
 
         <TextView
-            android:id="@+id/honda_review_review1"
+            android:id="@+id/tesla_review_review3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:fontFamily="@font/gilroy_medium"
             android:text="@string/review"
             android:textColor="@color/black_soft"
-            app:layout_constraintStart_toEndOf="@+id/honda_review1"
-            app:layout_constraintTop_toTopOf="@+id/honda_review1" />
+            app:layout_constraintStart_toEndOf="@+id/tesla_review3"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar3" />
 
         <ImageView
-            android:id="@+id/mobil_toyota_avanza"
+            android:id="@+id/mobil_tesla_y"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -315,31 +313,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/mobil_toyota_avanza" />
-
-        <ImageView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="22dp"
-            android:src="@drawable/ic_like_sm"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/honda_crv_harga" />
+            app:srcCompat="@drawable/mobil_tesla_y" />
 
         <TextView
-            android:id="@+id/honda_crv_harga"
+            android:id="@+id/tesla_y_harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="28dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/gilroy_medium"
-            android:text="IDR 600rb/hari"
+            android:text="IDR 1.6jt/hari"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

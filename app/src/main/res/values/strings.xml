@@ -46,4 +46,45 @@
     <string name="input_email_reset">Masukkan email anda yang terdaftar untuk menerima link</string>
     <string name="reset_password">Reset Password</string>
     <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="brand">Brand</string>
+    <string name="tesla">Tesla</string>
+    <string name="baru">Baru</string>
+
+    <!--    nama brand-->
+    <string-array name="nama_brand">
+        <item>Tesla</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Fiat</item>
+        <item>Mazda</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Suzuki</item>
+        <item>Volkswagen</item>
+        <item>Mitsubishi</item>
+        <item>Toyota</item>
+        <item>Jaguwar</item>
+        <item>Chevrolet</item>
+        <item>Ferrari</item>
+        <item>Bentley</item>
+    </string-array>
+
+    <string-array name="deskripsi_brand">
+        <item>Model X, Model S, Model Y</item>
+        <item>Audi A5, Audi Q5, Audi A8</item>
+        <item>BMW X5, BMW X6, BMW Z4</item>
+        <item>Fiat 500X, Fiat Panda, Fiat 400</item>
+        <item>Mazda 3, Mazda 6, Mazda CX-3</item>
+        <item>Honda CRV, Honda Brio</item>
+        <item>Santa Fe, Iconiq 5, Kona</item>
+        <item>Jimmy, Ignis, Ertiga, APV</item>
+        <item>VW Polo, VW Compacts, ID.4</item>
+        <item>Xpander,  Pajero, Outlander</item>
+        <item>Avanza, Xenia, Innova</item>
+        <item>Tipe F, F-Pace, I-Pace</item>
+        <item>Chevrolet Cruze, Chevrolet Aveo</item>
+        <item>Ferrari 818, Ferrari Dino</item>
+        <item>Brooklands, Mulsanne, Turbo-R</item>
+    </string-array>
+
 </resources>
